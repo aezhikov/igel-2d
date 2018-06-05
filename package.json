@@ -4,7 +4,7 @@
   "description": "Tiny and primitive game engine, written in TS",
   "main": "igel.js",
   "scripts": {
-    "test": "npx jest",
+    "test": "npx jest && codecov",
     "install": "echo 2",
     "tsc": "rm -Rf build && tsc && uglifyjs --compress --mangle --output ./build/igel-2d.min.js -- ./build/igel-2d.js && ngzip ./build/igel-2d.min.js > ./build/igel-2d.min.js.gz"
   },
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/aezhikov/igel-2d#readme",
   "devDependencies": {
     "@types/jest": "^22.2.3",
+    "codecov": "^3.0.2",
     "jest": "^23.1.0",
     "jest-junit": "^5.0.0",
     "ts-jest": "^22.4.6",
