@@ -4,8 +4,8 @@
   "description": "Tiny and primitive game engine, written in TS",
   "main": "igel.js",
   "scripts": {
-    "test": "echo 1",
-    "build": "echo 2",
+    "test": "npx jest",
+    "install": "echo 2",
     "tsc": "rm -Rf build && tsc && uglifyjs --compress --mangle --output ./build/igel-2d.min.js -- ./build/igel-2d.js && ngzip ./build/igel-2d.min.js > ./build/igel-2d.min.js.gz"
   },
   "repository": {
